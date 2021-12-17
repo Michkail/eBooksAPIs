@@ -12,6 +12,7 @@
         |         |
         |         |\_____ __init__.py
         |         |\_____ settings.py
+        |         |\_____ urls.py
         |          \_____ wsgi.py
         |
         |\_____ ebooks
