@@ -6,9 +6,12 @@ from ebooks.models import (
 
 class ReviewSerializer(serializers.ModelSerializer):
     
+    review_author = serializers.StringRelatedField(read_only=True)
+    
     class Meta:
         model = Review
-        fields = "__all__"
+        exclude = ("ebook",)
+        # fields = "__all__"
 
 
 class EbookSerializer(serializers.ModelSerializer):
